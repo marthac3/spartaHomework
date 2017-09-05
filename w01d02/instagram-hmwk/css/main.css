@@ -14,13 +14,14 @@ body {
 	border-width: 2px;
 }
 
-main {
+.mainBox {
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
 	margin: auto;
 	margin-top: 100px;
 	width: 1000px;
+	height: 514px;
 	/*background-image: url("images/frame.png");*/
 }
 
@@ -83,5 +84,6 @@ footer {
 	margin: 50px 50px 0 50px;
 	width:1000px;
 	margin: auto;
-	display: block;
+	display: inline-block;
+	text-align: center;
 }
