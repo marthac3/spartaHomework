@@ -18,6 +18,9 @@ main {
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
+	margin: auto;
+	margin-top: 100px;
+	width: 1000px;
 	/*background-image: url("images/frame.png");*/
 }
 
@@ -25,18 +28,36 @@ main {
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
+	display: inline-block;
+	float: left;
 }
 
 .login{
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
+	display: inline-block;
+	float: right;
+	margin-top: 20px;
+	padding: 10px 20px 10px 20px;
 }
 
 header {
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.text {
+	border-style: solid;
+	border-color: red;
+	border-width: 2px;
+	width: 602px;
+	padding-left: 20px;
+	padding-top: 20px;
+	float: right;
 }
 
 .intro {
@@ -46,9 +67,7 @@ header {
 }
 
 p {
-	border-style: solid;
-	border-color: black;
-	border-width: 2px;
+	
 }
 
 .buttons {
@@ -61,4 +80,8 @@ footer {
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
+	margin: 50px 50px 0 50px;
+	width:1000px;
+	margin: auto;
+	display: block;
 }
