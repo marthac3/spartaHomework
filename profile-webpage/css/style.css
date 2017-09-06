@@ -1,0 +1,23 @@
+/* colours
+		#48ACF0 - bright light blue
+		#594236 - medium brown
+		#AF988B - light brown (fancy font)
+		#93A3BC - light purple
+		#CCDDE2 - pale purple (background)
+		#252323 - dark purple (higlight)
+*/
+
+body {
+	background-color: #CCDDE2;
+}
+
+.image {
+
+}
+
+.jumbotron {
+	color: #aF988B;
+	font-weight: bold;
+	font-size: 2rem;
+	background-color: #252323;
+}
