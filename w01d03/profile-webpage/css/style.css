@@ -14,7 +14,7 @@ body {
 
 main {
 	background-color: #93A3BC;
-	padding-top: 10px;
+	padding: 10px 0 10px 0;
 }
 
 .row {
@@ -30,11 +30,12 @@ main {
 	text-align: center;
 }
 
-hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+li {
+	list-style: none;
+}
+
+h4 {
+	padding: 4px 0 0 5px;
 }
 
 /*
@@ -66,9 +67,5 @@ hr {
 }
 
 .animal-cards {
-	margin-top: 5px;
-}
-
-.long-image {
-	
+	margin: 5px 0 5px 0;
 }
