@@ -17,6 +17,14 @@ main {
 	padding: 10px 0 10px 0;
 }
 
+li {
+	list-style: none;
+}
+
+h4 {
+	padding: 4px 0 0 5px;
+}
+
 .row {
 	margin: 10px 0 10px 0;
 }
@@ -29,28 +37,6 @@ main {
 	padding: 2%;
 	text-align: center;
 }
-
-li {
-	list-style: none;
-}
-
-h4 {
-	padding: 4px 0 0 5px;
-}
-
-/*
-.btn-outline-success {
-	background-color: #93A3BC;
-	color: #252323;
-	border-color: #93A3BC;
-	margin: 2px;
-}
-
-.btn-outline-success:hover {
-	background-color: #252323;
-	border-color: #252323;
-}
-*/
 
 .about-me {
 	margin-bottom: 20px;
@@ -69,3 +55,20 @@ h4 {
 .animal-cards {
 	margin: 5px 0 5px 0;
 }
+
+.btn{
+	background-color: #252323;
+	border-color: #252323;
+	color: #ffffff;
+	margin: 2px;
+}
+
+.btn:hover {
+	background-color: #252323;
+	border-color: #252323;
+	background-color: #93A3BC;
+	color: #252323;
+	border-color: #93A3BC;
+}
+
+
