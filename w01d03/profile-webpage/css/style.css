@@ -1,0 +1,74 @@
+/* colours
+		#48ACF0 - bright light blue
+		#594236 - medium brown
+		#AF988B - light brown (fancy font)
+		#93A3BC - light purple
+		#CCDDE2 - pale purple (background)
+		#252323 - dark purple (higlight)
+*/
+
+body {
+	background-color: #CCDDE2;
+	height: 100vh;
+}
+
+main {
+	background-color: #93A3BC;
+	padding-top: 10px;
+}
+
+.row {
+	margin: 10px 0 10px 0;
+}
+
+.jumbotron {
+	color: #aF988B;
+	font-weight: bold;
+	font-size: 2rem;
+	background-color: #252323;
+	padding: 2%;
+	text-align: center;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*
+.btn-outline-success {
+	background-color: #93A3BC;
+	color: #252323;
+	border-color: #93A3BC;
+	margin: 2px;
+}
+
+.btn-outline-success:hover {
+	background-color: #252323;
+	border-color: #252323;
+}
+*/
+
+.about-me {
+	margin-bottom: 20px;
+	font-size: 1.3rem;
+}
+
+.text-wrap {
+	padding: 10px;
+	margin-bottom: 2px;
+}
+
+.animal-title {
+	font-size: 1rem;
+}
+
+.animal-cards {
+	margin-top: 5px;
+}
+
+.long-image {
+	
+}
