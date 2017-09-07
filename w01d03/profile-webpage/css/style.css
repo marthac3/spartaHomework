@@ -50,6 +50,7 @@ h4 {
 .navbar-toggler {
 	background-color: #CCDDE2;
 	border-color: #AF988B;
+	padding: 0 40% 0 40%;
 }
 
 .nav-link {
