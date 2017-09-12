@@ -57,14 +57,21 @@ while (score < 10 && compScore < 10 && set != "q"){
       // Alert
   alert ("You played: " + move + ", computer played " + computerMove + ". The result is " + result);
   alert ("The score is You: " + score + " Computer: " + compScore);
+  if (score == 10){
+    alert ("You are the winner!");
+  }
+  else if (compScore == 10){
+    alert ("The computer is the winner!");
+  }
   move = null;
 
-  var set = prompt("type (x) to reset the game or (q) to quit, or enter to continue")
+  var set = prompt("type (x) to reset the game or (q) to quit, or enter to continue");
 
-    if (set == "x") {
-      score = 0;
-      compScore = 0;
-    }
+  if (set == "x") {
+    score = 0;
+    compScore = 0;
+  }
+
 }
 // BONUS
     // Update the scores for computer and player
