@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	var display = document.getElementById("display");
 
 	var val1 = null;
+	var val1String = null;
 	var val2 = null;
 	var op = null;
 	var ans = null;
@@ -13,11 +14,15 @@ document.addEventListener("DOMContentLoaded", function(){
 	for (i = 0; i < buttons.length; i++) {
 		buttons[i].addEventListener("click", function() {
 			display.innerText = this.value;
-			if (operators.indexOf(this.value) == -1) {
+			if (operators.indexOf(this.value) == -1) { //exclude all operators
 				if (val1 == null){
-					val1 = parseFloat(this.value);
-				} else if (val2 == null){
-					val2 = parseFloat(this.value);
+					val1 = this.value;
+				} else if (val1 != null && op == null) { //val1 entered before operator
+					val1 += (this.value);
+				} else if (val2 == null) { //val2 entered after operator
+					val2 = this.value;
+				} else if (val2 != null && op != null){
+					val2 += (this.value);
 				} else {
 					alert ("both numbers chosen");
 				}
@@ -30,8 +35,10 @@ document.addEventListener("DOMContentLoaded", function(){
 			} else if (this.value == "C") {
 				remove();
 				display.innerText = "cleared";
-			} else if (this.value == "="){ // = calls the calculation function for the op
-				if(op == "+") {
+			} else if (this.value == "="){ 
+				val1 = parseFloat(val1); //values now floats
+				val2 = parseFloat(val2);
+				if(op == "+") { // = calls the calculation function for the op
 	                ans = add(val1, val2);
 	            } else if(op == "-") {
 	                ans = subtract(val1, val2);
@@ -44,12 +51,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	            remove();
 			}
 		});
-		//assign number button values to 'val1' then 'val2'
-		//assign operator buttons to 'choice'
 	}
-
-	//functions for calculations taking val1, val2 and choice
-	//function for equals running the calculation and returning val1 etc to null
 
 	function add(v1, v2){
     return v1 + v2;
@@ -66,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	function divide(v1, v2){
 	    return v1 / v2;
 	}
+
 
 	function remove(){
 		val1 = null;
