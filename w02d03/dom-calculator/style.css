@@ -1,0 +1,20 @@
+main {
+	margin: 50px auto;
+	height: 500px;
+	width: 400px;
+	border: 2px solid black;
+}
+
+#display {
+	margin: 10px auto;
+	height: 80px;
+	width: 380px;
+	border: 2px solid black;
+}
+
+button {
+	margin: 28px;
+	font-size: 20px;
+	line-height: 1.5;
+	width: 40px;
+}
