@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function(){
 			} else if (this.value != "C" && this.value != "="){
 				if (op == null) {
 					op = this.value;
+				} else {
+					alert ("you have already selected an operator");
 				}
 			} else if (this.value == "C") {
 				remove();
