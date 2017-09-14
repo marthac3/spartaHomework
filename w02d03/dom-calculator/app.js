@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	var val2 = null;
 	var op = null;
 	var ans = null;
-	var operators = ["+", "-", "/", "C", "=", "*"]
+	var operators = ["+", "-", "/", "C", "=", "*", "^2", "^", "sq"]
 
 	//create buttons
 	for (i = 0; i < buttons.length; i++) {
@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function(){
 					val1 = this.value;
 				} else if (val1 != null && op == null) { //val1 entered before operator
 					val1 += (this.value); //left as string to enable multiple digit numbers
+				} else if (op == "sq" || op == "^2") {
+					val2 = 0;
 				} else if (val2 == null) { 
 					val2 = this.value;
 				} else if (val2 != null && op != null){ //val2 entered after operator
@@ -45,6 +47,12 @@ document.addEventListener("DOMContentLoaded", function(){
 	                ans = multiply(val1, val2);
 	            } else if(op == "/") {
 	                ans = divide(val1, val2);
+	            } else if(op == "^2") {
+	            	ans = square(val1);
+	            } else if(op == "^") {
+	            	ans = power(val1, val2);
+	            } else if(op == "sq") { //not working
+	            	ans = sqrt(val1);
 	            }
 	            display.innerText = ans;
 	            remove(); //display the answer and then clear the values
@@ -68,6 +76,17 @@ document.addEventListener("DOMContentLoaded", function(){
 	    return v1 / v2;
 	}
 
+	function square(v1){
+		return Math.pow(v1, 2);
+	}
+
+	function power(v1, v2){
+    	return Math.pow(v1, v2);
+	}
+
+	function sqrt(v1){
+	    return Math.sqrt(v1);
+	}
 
 	function remove(){
 		val1 = null;
