@@ -99,11 +99,16 @@ def trip_calc
 	puts "Enter speed in mph"
 	speed = gets.chomp.to_f
 
+	if speed > 60
+		fuel = (speed - 60) * 2
+	end
+
 	time = distance / speed
 	gallons = distance / fuel
 	cost = gallons * fuel_cost
 
 	puts "Your trip will take #{time} hours and cost #{cost}"
+	puts fuel
 end
 
 def run
