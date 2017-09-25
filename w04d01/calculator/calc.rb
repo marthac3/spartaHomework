@@ -95,13 +95,13 @@ def trip_calc
 	puts "Enter fuel efficiency in mpg"
 	fuel = gets.chomp.to_f
 	puts "Enter cost per gallon in £"
-	fuelCost = gets.chomp.to_f
+	fuel_cost = gets.chomp.to_f
 	puts "Enter speed in mph"
 	speed = gets.chomp.to_f
 
 	time = distance / speed
 	gallons = distance / fuel
-	cost = gallons * distance
+	cost = gallons * fuel_cost
 
 	puts "Your trip will take #{time} hours and cost #{cost}"
 end
