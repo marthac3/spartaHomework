@@ -1,4 +1,5 @@
-class Square
+class Square < Quad
+
 	attr_accessor :side_length
 
 	def initialize(side_length)
@@ -17,7 +18,4 @@ class Square
 		self.side_length *= num
 	end
 
-	def describe
-		puts "Square Area: #{calculate_area} Perimeter: #{calculate_perimeter}"
-	end
 end

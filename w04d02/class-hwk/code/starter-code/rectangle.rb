@@ -1,4 +1,5 @@
-class Rectangle
+class Rectangle < Quad
+
 	attr_accessor :short_side, :long_side
 
 	def initialize(short_side, long_side)
@@ -19,7 +20,4 @@ class Rectangle
 		self.long_side *= num
 	end
 
-	def describe
-		puts "Rectangle Area: #{calculate_area} Perimeter: #{calculate_perimeter}"
-	end
 end

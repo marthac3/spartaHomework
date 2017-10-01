@@ -1,0 +1,9 @@
+<h1>YouTube</h1>
+
+<% @videos.each do |video| %>
+	<div class="post">
+	  <h3><a href="/<%= video.id %>"><%= video.title %></a></h3>
+	  <a href="/<%= video.id %>"><img src="/images/<%= video.img %>" alt="video thumbnail"></a>
+	  <p><%= video.des %></p>
+	</div>
+<% end %>

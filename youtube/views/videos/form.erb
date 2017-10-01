@@ -1,0 +1,28 @@
+<form action="/<%= @video.id %>" method="POST">
+  <div>
+    <label>Title</label>
+    <input type="text" name="title" placeholder="Enter a title" value="<%= @video.title %>">
+  </div>
+
+  <div>
+    <label>Description</label>
+    <textarea name="des"><%= @video.des %></textarea>
+  </div>
+
+  <div>
+    <label>URL</label>
+    <input type="text" name="url" placeholder="Enter a URL" value="<%= @video.url %>">
+  </div>
+
+  <div>
+    <label>Image</label>
+    <input type="text" name="img" placeholder="Enter image name" value="<%= @video.img %>">
+  </div>
+
+  <div>
+    <input class="button" type="submit" value="Save Video">
+  </div>
+  <% if(@video.id) %>
+    <input class="button" type="hidden" name="_method" value="PUT">
+  <% end %>
+</form>

@@ -1,0 +1,53 @@
+body {
+	background-color: #fcfcfc;
+	font-family: Verdana;
+}
+
+nav {
+	font-weight: bold;
+	font-size: 1.2rem;
+	border: 1px solid #555555;
+	padding: 2px 5px 2px 5px;
+	text-align: center;
+}
+
+a:hover {
+	color: #3aaaca;
+}
+
+a {
+	padding: 2px 5px 2px 5px;
+}
+
+.post {
+	border: 1px solid #555555;
+	padding: 0 5px 0 5px;
+	margin: 2px 0 2px 0;
+}
+
+label {
+	padding: 10px 10px 50px 0;
+	margin: 10px 10px 10px 0;
+}
+
+input {
+	padding: 5px 10px 5px 0;
+	margin: 5px 10px 5px 0;
+}
+
+textarea {
+	padding: 5px 10px 5px 10px;
+	margin: 5px 10px 5px 0;
+	width: 200px;
+}
+
+form {
+	border: 1px solid #555555;
+	padding: 0 5px 0 5px;
+}
+
+.button {
+	font-size: 3rem;
+	font-weight: bold;
+	margin: 5px, 5px, 5px, 5px;
+}

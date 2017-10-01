@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= @title %></title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  
+   <%= erb(:'partials/navigations', :layout => false) %>
+  
+   <%= yield %>
+
+</body>
+</html>
