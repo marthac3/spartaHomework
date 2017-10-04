@@ -1,0 +1,17 @@
+<p>
+	Title: <%= @song.title %>
+</p>
+
+<p>
+	Release: <%= @song.release %>
+</p>
+
+<p>
+	Genre: <%= @song.genre %>
+</p>
+
+<p>
+	Artist: <%= link_to @song.artist.name, artist_url(@song.artist.id) %>
+</p>
+
+<%= link_to 'Back', songs_path %>

@@ -1,0 +1,18 @@
+<p>
+	Name: <%= @artist.name %>
+</p>
+
+<p>
+	Age: <%= @artist.age %>
+</p>
+
+<p>
+	Songs:
+	<% @artist.songs.each do |song| %>
+		<ul>
+		<li><%= song.title %></li>
+		</ul>
+	<% end %>
+</p>
+
+<%= link_to 'Back', artists_path %>
